@@ -1,0 +1,3778 @@
+----------------------------------------------------------------------------------------------------------------------
+Log Time: 06-Jun-2024 07:55:31 PM
+Log file created.
+Read ftp information complete at:06-Jun-2024 07:55:32 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for DI Central Inbound 850in at:06-Jun-2024 07:55:32 PM
+
+Connecting ftp started at: 06-Jun-2024 07:55:32 PM
+
+>         Connect()
+
+Status:   Connecting to 52.228.127.8:21
+
+Response: 220 DiConnect FTP Service (ServerID: 92)
+
+Command:  USER int1371991
+
+Response: 331 Password required for int1371991
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extensions supported:
+Response: SIZE
+Response: SSL
+Response: TLS
+Response: UTF8
+
+Response: 211 END 
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 UTF8 mode is always enable.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("\In\850\", Auto)
+
+>         GetWorkingDirectory()
+
+Command:  PWD
+
+Response: 257 "/" is current directory. 
+
+Command:  TYPE I
+
+Response: 200 Type I Accepted.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /In/850", 0)
+
+Command:  EPSV
+
+Response: 500 Unknown Command.
+
+>         OpenPassiveDataStream(PASV, "LIST /In/850", 0)
+
+Command:  PASV
+
+Response: 227 Entering Passive Mode(52,228,127,8,27,188).
+
+Status:   Connecting to 52.228.127.8:7100
+
+Command:  LIST /In/850
+
+Response: 125 Data connection already open. Transfer starting.
+
++---------------------------------------+
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Downloading multiple files from ftp successed.
+
+Read ftp information complete at:06-Jun-2024 07:55:38 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for DI Central Inbound 850dvsin at:06-Jun-2024 07:55:38 PM
+
+Connecting ftp started at: 06-Jun-2024 07:55:38 PM
+
+>         Connect()
+
+Status:   Connecting to 52.228.127.8:21
+
+Response: 220 DiConnect FTP Service (ServerID: 118)
+
+Command:  USER EpochDTC
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+Response: 331 Password required for EpochDTC
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extensions supported:
+Response: SIZE
+Response: SSL
+Response: TLS
+Response: UTF8
+
+Response: 211 END 
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 UTF8 mode is always enable.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("\Incoming", Auto)
+
+>         GetWorkingDirectory()
+
+Command:  PWD
+
+Response: 257 "/" is current directory. 
+
+Command:  TYPE I
+
+Response: 200 Type I Accepted.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /Incoming", 0)
+
+Command:  EPSV
+
+Response: 500 Unknown Command.
+
+>         OpenPassiveDataStream(PASV, "LIST /Incoming", 0)
+
+Command:  PASV
+
+Response: 227 Entering Passive Mode(52,228,127,8,29,50).
+
+Status:   Connecting to 52.228.127.8:7474
+
+Command:  LIST /Incoming
+
+Response: 125 Data connection already open. Transfer starting.
+
++---------------------------------------+
+
+Listing:  06-06-24  02:24PM             2328 inte7677_850_29352_20240606_092439_5871176825.any
+
+Listing:  06-06-24  02:15PM             2328 inte7677_850_47058_20240606_091519_2961198922.any
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Confirmed format Windows
+
+Found the files to download.
+
+>         GetFileSize("/Incoming/inte7677_850_29352_20240606_092439_5871176825.any")
+
+Command:  SIZE /Incoming/inte7677_850_29352_20240606_092439_5871176825.any
+
+Response: 213 2328
+
+>         GetModifiedTime("/Incoming/inte7677_850_29352_20240606_092439_5871176825.any")
+
+Command:  MDTM /Incoming/inte7677_850_29352_20240606_092439_5871176825.any
+
+Response: 500 Unknown Command.
+
+>         Connect()
+
+Command:  QUIT
+
+Response: 221 DiConnect FTP Service Goodbye
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Connecting to 52.228.127.8:21
+
+Response: 220 DiConnect FTP Service (ServerID: 92)
+
+Command:  USER EpochDTC
+
+Response: 331 Password required for EpochDTC
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extensions supported:
+Response: SIZE
+Response: SSL
+Response: TLS
+Response: UTF8
+
+Response: 211 END 
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 UTF8 mode is always enable.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+Ftp connected at: 06-Jun-2024 07:55:45 PM
+
+>         DownloadFile("\\Ipwsxap01\e\NxT\rd\edi\ipi\in\dvs\inte7677_850_29352_20240606_092439_5871176825Temp.any", "/Incoming/inte7677_850_29352_20240606_092439_5871176825.any", Overwrite, None)
+
+Download failed. Error: FluentFTP.FtpException: Error while creating directories. See InnerException for more info.
+ ---> System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\in\dvs'
+   at System.IO.FileSystem.CreateDirectory(String fullPath, Byte[] securityDescriptor)
+   at System.IO.Directory.CreateDirectory(String path)
+   at FluentFTP.FtpClient.DownloadFileToFile(String localPath, String remotePath, FtpLocalExists existsMode, FtpVerify verifyOptions, Action`1 progress, FtpProgress metaProgress)
+   --- End of inner exception stack trace ---
+   at FluentFTP.FtpClient.DownloadFileToFile(String localPath, String remotePath, FtpLocalExists existsMode, FtpVerify verifyOptions, Action`1 progress, FtpProgress metaProgress)
+   at FluentFTP.FtpClient.DownloadFile(String localPath, String remotePath, FtpLocalExists existsMode, FtpVerify verifyOptions, Action`1 progress)
+   at FTPHandlerService.FtpRequestProcessor.DownloadFilesAndSaveToDirectory(String FtpHost, String FtpUser, String FtpPassword, String FtpDirectory, String FileExtension, String DownloadTo, Boolean DeleteFilesAfterDownload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 271
+
+Ftp information is invalid for DI Central Inbound 850dvsin .Failed upload of single file.
+
+Read ftp information complete at:06-Jun-2024 07:55:55 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for DI Central - Sxe60 856out at:06-Jun-2024 07:55:55 PM
+
+Connecting ftp started at: 06-Jun-2024 07:55:55 PM
+
+Trying upload by fluent ftp #1 started at: 06-Jun-2024 07:55:55 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #2 started at: 06-Jun-2024 07:55:55 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #3 started at: 06-Jun-2024 07:55:55 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #4 started at: 06-Jun-2024 07:55:56 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #5 started at: 06-Jun-2024 07:55:56 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #6 started at: 06-Jun-2024 07:55:56 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #7 started at: 06-Jun-2024 07:55:56 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Retried upload for6 times. Still failed. Quiting upload.....
+
+Upload failed finally
+
+Upload failed for DI Central - Sxe60 856out . Error:Failed
+
+Read ftp information complete at:06-Jun-2024 07:55:59 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for Di Central - Sxe60 857out at:06-Jun-2024 07:55:59 PM
+
+Connecting ftp started at: 06-Jun-2024 07:55:59 PM
+
+Trying upload by fluent ftp #1 started at: 06-Jun-2024 07:55:59 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #2 started at: 06-Jun-2024 07:55:59 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #3 started at: 06-Jun-2024 07:55:59 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #4 started at: 06-Jun-2024 07:55:59 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #5 started at: 06-Jun-2024 07:56:00 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #6 started at: 06-Jun-2024 07:56:00 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #7 started at: 06-Jun-2024 07:56:00 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Retried upload for6 times. Still failed. Quiting upload.....
+
+Upload failed finally
+
+Upload failed for Di Central - Sxe60 857out . Error:Failed
+
+Read ftp information complete at:06-Jun-2024 07:56:03 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for DI Central - Sxe60 855out at:06-Jun-2024 07:56:03 PM
+
+Connecting ftp started at: 06-Jun-2024 07:56:03 PM
+
+Trying upload by fluent ftp #1 started at: 06-Jun-2024 07:56:03 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #2 started at: 06-Jun-2024 07:56:03 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #3 started at: 06-Jun-2024 07:56:03 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #4 started at: 06-Jun-2024 07:56:03 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #5 started at: 06-Jun-2024 07:56:03 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #6 started at: 06-Jun-2024 07:56:03 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #7 started at: 06-Jun-2024 07:56:03 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Retried upload for6 times. Still failed. Quiting upload.....
+
+Upload failed finally
+
+Upload failed for DI Central - Sxe60 855out . Error:Failed
+
+Read ftp information complete at:06-Jun-2024 07:56:10 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading multiple files to ftp for DI Central - Sxe60 846out at:06-Jun-2024 07:56:10 PM
+
+Download failed. Error: System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\846'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at FTPHandlerService.FtpRequestProcessor.UploadFilesToFtp(String FtpHost, String FtpUser, String FtpPassword, String folderPath, String fileExtension, String FtpDirectory, Boolean DeleteFileAfterUpload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 720
+
+Upload of multiple files failed for DI Central - Sxe60 846out . Error:System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\846'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at FTPHandlerService.FtpRequestProcessor.UploadFilesToFtp(String FtpHost, String FtpUser, String FtpPassword, String folderPath, String fileExtension, String FtpDirectory, Boolean DeleteFileAfterUpload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 720
+
+Read ftp information complete at:06-Jun-2024 07:56:11 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for OOCL - OOCL Post Advice at:06-Jun-2024 07:56:11 PM
+
+Connecting ftp started at: 06-Jun-2024 07:56:11 PM
+
+>         Connect()
+
+Status:   Connecting to 146.222.19.55:21
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER ftp_INPLLL1
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("/ftp_INPLLL1/out", Auto)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /ftp_INPLLL1/out", 0)
+
+Command:  EPSV
+
+Response: 229 Entering Extended Passive Mode (|||52886|)
+
+Status:   Connecting to 146.222.19.55:52886
+
+Command:  LIST /ftp_INPLLL1/out
+
+Response: 150 Opening BINARY mode data connection.
+
++---------------------------------------+
+
+Listing:  04-09-15  05:30PM       <DIR>          Backup
+
+Listing:  06-06-24  08:00PM       <DIR>          tmp
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Not in UNIX format
+
+Status:   Not in UNIX format
+
+Status:   Detected format Windows
+
+File to download not found.
+
+File to download not found.
+
+Ftp information is invalid for OOCL - OOCL Post Advice .Failed upload of single file.
+
+Read ftp information complete at:06-Jun-2024 07:56:13 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  downloading single file from ftp for OOCL - OOCL INTPlay.csv at:06-Jun-2024 07:56:13 PM
+
+Connecting ftp started at: 06-Jun-2024 07:56:13 PM
+
+>         Connect()
+
+Status:   Connecting to 146.222.19.55:21
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER ftp_INPLLL1
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("/ftp_INPLLL1/out", Auto)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /ftp_INPLLL1/out", 0)
+
+Command:  EPSV
+
+Response: 229 Entering Extended Passive Mode (|||52888|)
+
+Status:   Connecting to 146.222.19.55:52888
+
+Command:  LIST /ftp_INPLLL1/out
+
+Response: 125 Data connection already open; Transfer starting.
+
++---------------------------------------+
+
+Listing:  04-09-15  05:30PM       <DIR>          Backup
+
+Listing:  06-06-24  08:00PM       <DIR>          tmp
+
+-----------------------------------------
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Command:  QUIT
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Not in UNIX format
+
+Status:   Not in UNIX format
+
+Status:   Detected format Windows
+
+Download of single file from ftp successed for OOCL - OOCL INTPlay.csv at:06-Jun-2024 07:56:15 PM
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+Read ftp information complete at:06-Jun-2024 07:56:15 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for OOCL - Sxe60 850out OOCL at:06-Jun-2024 07:56:15 PM
+
+Connecting ftp started at: 06-Jun-2024 07:56:15 PM
+
+Trying upload by fluent ftp #1 started at: 06-Jun-2024 07:56:15 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #2 started at: 06-Jun-2024 07:56:15 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #3 started at: 06-Jun-2024 07:56:15 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #4 started at: 06-Jun-2024 07:56:15 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #5 started at: 06-Jun-2024 07:56:15 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #6 started at: 06-Jun-2024 07:56:16 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #7 started at: 06-Jun-2024 07:56:16 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Retried upload for6 times. Still failed. Quiting upload.....
+
+Upload failed finally
+
+Upload failed for OOCL - Sxe60 850out OOCL . Error:Failed
+
+Read ftp information complete at:06-Jun-2024 07:56:17 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading multiple files to ftp for 3PL - ShippingOrdersOW_out at:06-Jun-2024 07:56:17 PM
+
+Download failed. Error: System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\3pl\out'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at FTPHandlerService.FtpRequestProcessor.UploadFilesToFtp(String FtpHost, String FtpUser, String FtpPassword, String folderPath, String fileExtension, String FtpDirectory, Boolean DeleteFileAfterUpload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 720
+
+Upload of multiple files failed for 3PL - ShippingOrdersOW_out . Error:System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\3pl\out'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at FTPHandlerService.FtpRequestProcessor.UploadFilesToFtp(String FtpHost, String FtpUser, String FtpPassword, String folderPath, String fileExtension, String FtpDirectory, Boolean DeleteFileAfterUpload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 720
+
+Read ftp information complete at:06-Jun-2024 07:56:17 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for 3PL - ShippingOrdersSW_in at:06-Jun-2024 07:56:17 PM
+
+Connecting ftp started at: 06-Jun-2024 07:56:17 PM
+
+>         Connect()
+
+Status:   Connecting to 107.0.168.16:21
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER 282
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("/282/SW/", Auto)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /282/SW", 0)
+
+Command:  EPSV
+
+Response: 229 Entering Extended Passive Mode (|||56769|)
+
+Status:   Connecting to 107.0.168.16:56769
+
+Command:  LIST /282/SW
+
+Response: 150 Opening BINARY mode data connection.
+
++---------------------------------------+
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Downloading multiple files from ftp successed.
+
+Read ftp information complete at:06-Jun-2024 07:56:22 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading multiple files to ftp for Regal - ShippingOrdersREGA_out at:06-Jun-2024 07:56:22 PM
+
+Download failed. Error: System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\3pl\out'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at FTPHandlerService.FtpRequestProcessor.UploadFilesToFtp(String FtpHost, String FtpUser, String FtpPassword, String folderPath, String fileExtension, String FtpDirectory, Boolean DeleteFileAfterUpload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 720
+
+Upload of multiple files failed for Regal - ShippingOrdersREGA_out . Error:System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\3pl\out'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at FTPHandlerService.FtpRequestProcessor.UploadFilesToFtp(String FtpHost, String FtpUser, String FtpPassword, String folderPath, String fileExtension, String FtpDirectory, Boolean DeleteFileAfterUpload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 720
+
+Read ftp information complete at:06-Jun-2024 07:56:25 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for Regal - ShippingOdersREGA_in at:06-Jun-2024 07:56:25 PM
+
+Connecting ftp started at: 06-Jun-2024 07:56:25 PM
+
+>         Connect()
+
+Status:   Connecting to 107.0.168.16:21
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER 282
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("/282/SW/", Auto)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /282/SW", 0)
+
+Command:  EPSV
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+Response: 229 Entering Extended Passive Mode (|||56771|)
+
+Status:   Connecting to 107.0.168.16:56771
+
+Command:  LIST /282/SW
+
+Response: 125 Data connection already open; Transfer starting.
+
++---------------------------------------+
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Downloading multiple files from ftp successed.
+
+Read ftp information complete at:06-Jun-2024 07:56:30 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for DI Central - Sxe60 810out at:06-Jun-2024 07:56:30 PM
+
+Connecting ftp started at: 06-Jun-2024 07:56:30 PM
+
+Trying upload by fluent ftp #1 started at: 06-Jun-2024 07:56:30 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #2 started at: 06-Jun-2024 07:56:30 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #3 started at: 06-Jun-2024 07:56:30 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #4 started at: 06-Jun-2024 07:56:30 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #5 started at: 06-Jun-2024 07:56:30 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #6 started at: 06-Jun-2024 07:56:30 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #7 started at: 06-Jun-2024 07:56:30 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Retried upload for6 times. Still failed. Quiting upload.....
+
+Upload failed finally
+
+Upload failed for DI Central - Sxe60 810out . Error:Failed
+
+Job Ends at: 06-Jun-2024 07:56:37 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Job Started at:10-Jun-2024 04:12:38 PM
+
+Read ftp information complete at:10-Jun-2024 04:12:43 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for DI Central Inbound 850in at:10-Jun-2024 04:12:43 PM
+
+Connecting ftp started at: 10-Jun-2024 04:12:43 PM
+
+>         Connect()
+
+Status:   Connecting to 52.228.127.8:21
+
+Response: 220 DiConnect FTP Service (ServerID: 111)
+
+Command:  USER int1371991
+
+Response: 331 Password required for int1371991
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extensions supported:
+Response: SIZE
+Response: SSL
+Response: TLS
+Response: UTF8
+
+Response: 211 END 
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 UTF8 mode is always enable.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("\In\850\", Auto)
+
+>         GetWorkingDirectory()
+
+Command:  PWD
+
+Response: 257 "/" is current directory. 
+
+Command:  TYPE I
+
+Response: 200 Type I Accepted.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /In/850", 0)
+
+Command:  EPSV
+
+Response: 500 Unknown Command.
+
+>         OpenPassiveDataStream(PASV, "LIST /In/850", 0)
+
+Command:  PASV
+
+Response: 227 Entering Passive Mode(52,228,127,8,37,2).
+
+Status:   Connecting to 52.228.127.8:9474
+
+Command:  LIST /In/850
+
+Response: 125 Data connection already open. Transfer starting.
+
++---------------------------------------+
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Downloading multiple files from ftp successed.
+
+Read ftp information complete at:10-Jun-2024 04:12:51 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for DI Central Inbound 850dvsin at:10-Jun-2024 04:12:51 PM
+
+Connecting ftp started at: 10-Jun-2024 04:12:51 PM
+
+>         Connect()
+
+Status:   Connecting to 52.228.127.8:21
+
+Response: 220 DiConnect FTP Service (ServerID: 90)
+
+Command:  USER EpochDTC
+
+Response: 331 Password required for EpochDTC
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extensions supported:
+Response: SIZE
+Response: SSL
+Response: TLS
+Response: UTF8
+
+Response: 211 END 
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 UTF8 mode is always enable.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("\Incoming", Auto)
+
+>         GetWorkingDirectory()
+
+Command:  PWD
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+Response: 257 "/" is current directory. 
+
+Command:  TYPE I
+
+Response: 200 Type I Accepted.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /Incoming", 0)
+
+Command:  EPSV
+
+Response: 500 Unknown Command.
+
+>         OpenPassiveDataStream(PASV, "LIST /Incoming", 0)
+
+Command:  PASV
+
+Response: 227 Entering Passive Mode(52,228,127,8,35,140).
+
+Status:   Connecting to 52.228.127.8:9100
+
+Command:  LIST /Incoming
+
+Response: 125 Data connection already open. Transfer starting.
+
++---------------------------------------+
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Downloading multiple files from ftp successed.
+
+Read ftp information complete at:10-Jun-2024 04:12:58 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for DI Central - Sxe60 856out at:10-Jun-2024 04:12:58 PM
+
+Connecting ftp started at: 10-Jun-2024 04:12:58 PM
+
+Trying upload by fluent ftp #1 started at: 10-Jun-2024 04:12:58 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #2 started at: 10-Jun-2024 04:13:01 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #3 started at: 10-Jun-2024 04:13:01 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #4 started at: 10-Jun-2024 04:13:01 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #5 started at: 10-Jun-2024 04:13:01 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #6 started at: 10-Jun-2024 04:13:01 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #7 started at: 10-Jun-2024 04:13:01 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\856\edi856_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Retried upload for6 times. Still failed. Quiting upload.....
+
+Upload failed finally
+
+Upload failed for DI Central - Sxe60 856out . Error:Failed
+
+Read ftp information complete at:10-Jun-2024 04:13:07 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for Di Central - Sxe60 857out at:10-Jun-2024 04:13:07 PM
+
+Connecting ftp started at: 10-Jun-2024 04:13:07 PM
+
+Trying upload by fluent ftp #1 started at: 10-Jun-2024 04:13:07 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #2 started at: 10-Jun-2024 04:13:07 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #3 started at: 10-Jun-2024 04:13:07 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #4 started at: 10-Jun-2024 04:13:07 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #5 started at: 10-Jun-2024 04:13:07 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #6 started at: 10-Jun-2024 04:13:08 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #7 started at: 10-Jun-2024 04:13:08 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\857\edi857_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Retried upload for6 times. Still failed. Quiting upload.....
+
+Upload failed finally
+
+Upload failed for Di Central - Sxe60 857out . Error:Failed
+
+Read ftp information complete at:10-Jun-2024 04:13:23 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for DI Central - Sxe60 855out at:10-Jun-2024 04:13:23 PM
+
+Connecting ftp started at: 10-Jun-2024 04:13:23 PM
+
+Trying upload by fluent ftp #1 started at: 10-Jun-2024 04:13:23 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #2 started at: 10-Jun-2024 04:13:23 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #3 started at: 10-Jun-2024 04:13:23 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #4 started at: 10-Jun-2024 04:13:23 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #5 started at: 10-Jun-2024 04:13:23 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #6 started at: 10-Jun-2024 04:13:23 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #7 started at: 10-Jun-2024 04:13:23 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\855\edi855_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Retried upload for6 times. Still failed. Quiting upload.....
+
+Upload failed finally
+
+Upload failed for DI Central - Sxe60 855out . Error:Failed
+
+Read ftp information complete at:10-Jun-2024 04:13:27 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading multiple files to ftp for DI Central - Sxe60 846out at:10-Jun-2024 04:13:27 PM
+
+Download failed. Error: System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\846'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at FTPHandlerService.FtpRequestProcessor.UploadFilesToFtp(String FtpHost, String FtpUser, String FtpPassword, String folderPath, String fileExtension, String FtpDirectory, Boolean DeleteFileAfterUpload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 720
+
+Upload of multiple files failed for DI Central - Sxe60 846out . Error:System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\846'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at FTPHandlerService.FtpRequestProcessor.UploadFilesToFtp(String FtpHost, String FtpUser, String FtpPassword, String folderPath, String fileExtension, String FtpDirectory, Boolean DeleteFileAfterUpload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 720
+
+Read ftp information complete at:10-Jun-2024 04:13:28 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for OOCL - OOCL Post Advice at:10-Jun-2024 04:13:28 PM
+
+Connecting ftp started at: 10-Jun-2024 04:13:28 PM
+
+>         Connect()
+
+Status:   Connecting to 146.222.19.55:21
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER ftp_INPLLL1
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("/ftp_INPLLL1/out", Auto)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /ftp_INPLLL1/out", 0)
+
+Command:  EPSV
+
+Response: 229 Entering Extended Passive Mode (|||56311|)
+
+Status:   Connecting to 146.222.19.55:56311
+
+Command:  LIST /ftp_INPLLL1/out
+
+Response: 125 Data connection already open; Transfer starting.
+
++---------------------------------------+
+
+Listing:  04-09-15  05:30PM       <DIR>          Backup
+
+Listing:  06-07-24  08:03PM       <DIR>          tmp
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Not in UNIX format
+
+Status:   Not in UNIX format
+
+Status:   Detected format Windows
+
+File to download not found.
+
+File to download not found.
+
+Ftp information is invalid for OOCL - OOCL Post Advice .Failed upload of single file.
+
+Read ftp information complete at:10-Jun-2024 04:13:32 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  downloading single file from ftp for OOCL - OOCL INTPlay.csv at:10-Jun-2024 04:13:32 PM
+
+Connecting ftp started at: 10-Jun-2024 04:13:32 PM
+
+>         Connect()
+
+Status:   Connecting to 146.222.19.55:21
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER ftp_INPLLL1
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("/ftp_INPLLL1/out", Auto)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /ftp_INPLLL1/out", 0)
+
+Command:  EPSV
+
+Response: 229 Entering Extended Passive Mode (|||56339|)
+
+Status:   Connecting to 146.222.19.55:56339
+
+Command:  LIST /ftp_INPLLL1/out
+
+Response: 150 Opening BINARY mode data connection.
+
++---------------------------------------+
+
+Listing:  04-09-15  05:30PM       <DIR>          Backup
+
+Listing:  06-07-24  08:03PM       <DIR>          tmp
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Not in UNIX format
+
+Status:   Not in UNIX format
+
+Status:   Detected format Windows
+
+Download of single file from ftp successed for OOCL - OOCL INTPlay.csv at:10-Jun-2024 04:13:42 PM
+
+Read ftp information complete at:10-Jun-2024 04:13:43 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for OOCL - Sxe60 850out OOCL at:10-Jun-2024 04:13:43 PM
+
+Connecting ftp started at: 10-Jun-2024 04:13:43 PM
+
+Trying upload by fluent ftp #1 started at: 10-Jun-2024 04:13:43 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #2 started at: 10-Jun-2024 04:13:45 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #3 started at: 10-Jun-2024 04:13:45 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #4 started at: 10-Jun-2024 04:13:45 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #5 started at: 10-Jun-2024 04:13:45 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #6 started at: 10-Jun-2024 04:13:45 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #7 started at: 10-Jun-2024 04:13:45 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\850\edi850_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Retried upload for6 times. Still failed. Quiting upload.....
+
+Upload failed finally
+
+Upload failed for OOCL - Sxe60 850out OOCL . Error:Failed
+
+Read ftp information complete at:10-Jun-2024 04:13:48 PM
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Testing connectivity using Socket.Poll()...
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading multiple files to ftp for 3PL - ShippingOrdersOW_out at:10-Jun-2024 04:13:48 PM
+
+Download failed. Error: System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\3pl\out'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at FTPHandlerService.FtpRequestProcessor.UploadFilesToFtp(String FtpHost, String FtpUser, String FtpPassword, String folderPath, String fileExtension, String FtpDirectory, Boolean DeleteFileAfterUpload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 720
+
+Upload of multiple files failed for 3PL - ShippingOrdersOW_out . Error:System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\3pl\out'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at FTPHandlerService.FtpRequestProcessor.UploadFilesToFtp(String FtpHost, String FtpUser, String FtpPassword, String folderPath, String fileExtension, String FtpDirectory, Boolean DeleteFileAfterUpload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 720
+
+Read ftp information complete at:10-Jun-2024 04:13:49 PM
+
+Command:  QUIT
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for 3PL - ShippingOrdersSW_in at:10-Jun-2024 04:13:49 PM
+
+Connecting ftp started at: 10-Jun-2024 04:13:49 PM
+
+>         Connect()
+
+Response: 221 DiConnect FTP Service Goodbye
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Testing connectivity using Socket.Poll()...
+
+Status:   Connecting to 107.0.168.16:21
+
+Command:  QUIT
+
+Response: 221 Goodbye.
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER 282
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("/282/SW/", Auto)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /282/SW", 0)
+
+Command:  EPSV
+
+Response: 229 Entering Extended Passive Mode (|||58595|)
+
+Status:   Connecting to 107.0.168.16:58595
+
+Command:  LIST /282/SW
+
+Response: 125 Data connection already open; Transfer starting.
+
++---------------------------------------+
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Downloading multiple files from ftp successed.
+
+Read ftp information complete at:10-Jun-2024 04:13:58 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading multiple files to ftp for Regal - ShippingOrdersREGA_out at:10-Jun-2024 04:13:58 PM
+
+Download failed. Error: System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\3pl\out'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at FTPHandlerService.FtpRequestProcessor.UploadFilesToFtp(String FtpHost, String FtpUser, String FtpPassword, String folderPath, String fileExtension, String FtpDirectory, Boolean DeleteFileAfterUpload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 720
+
+Upload of multiple files failed for Regal - ShippingOrdersREGA_out . Error:System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\3pl\out'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at FTPHandlerService.FtpRequestProcessor.UploadFilesToFtp(String FtpHost, String FtpUser, String FtpPassword, String folderPath, String fileExtension, String FtpDirectory, Boolean DeleteFileAfterUpload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 720
+
+Read ftp information complete at:10-Jun-2024 04:13:59 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for Regal - ShippingOdersREGA_in at:10-Jun-2024 04:13:59 PM
+
+Connecting ftp started at: 10-Jun-2024 04:13:59 PM
+
+>         Connect()
+
+Status:   Connecting to 107.0.168.16:21
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER 282
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("/282/SW/", Auto)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /282/SW", 0)
+
+Command:  EPSV
+
+Response: 229 Entering Extended Passive Mode (|||58597|)
+
+Status:   Connecting to 107.0.168.16:58597
+
+Command:  LIST /282/SW
+
+Response: 125 Data connection already open; Transfer starting.
+
++---------------------------------------+
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Downloading multiple files from ftp successed.
+
+Read ftp information complete at:10-Jun-2024 04:14:05 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for DI Central - Sxe60 810out at:10-Jun-2024 04:14:05 PM
+
+Connecting ftp started at: 10-Jun-2024 04:14:05 PM
+
+Trying upload by fluent ftp #1 started at: 10-Jun-2024 04:14:05 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #2 started at: 10-Jun-2024 04:14:05 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #3 started at: 10-Jun-2024 04:14:05 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #4 started at: 10-Jun-2024 04:14:05 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #5 started at: 10-Jun-2024 04:14:05 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #6 started at: 10-Jun-2024 04:14:05 PM
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Upload failed....retrying....
+
+Trying upload by fluent ftp #7 started at: 10-Jun-2024 04:14:05 PM
+
+Upload failed. Reason:-System.IO.IOException: The network path was not found. : '\\Ipwsxap01\e\NxT\rd\edi\ipi\out\810\edi810_o.dat'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.OpenRead(String path)
+   at FTPHandlerService.FtpRequestProcessor.UploadToFTPByFluentFtp(String FtpHost, String FtpUser, String FtpPassword, String filePath, String FtpDirectory, String fileNameToUpload, Int32 retryCounter) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 439
+
+Retried upload for6 times. Still failed. Quiting upload.....
+
+Upload failed finally
+
+Upload failed for DI Central - Sxe60 810out . Error:Failed
+
+Job Ends at: 10-Jun-2024 04:14:13 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Job Started at:11-Jun-2024 01:34:28 PM
+
+Read ftp information complete at:11-Jun-2024 01:36:50 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for DI Central Inbound 850in at:11-Jun-2024 01:36:50 PM
+
+Connecting ftp started at: 11-Jun-2024 01:36:51 PM
+
+>         Connect()
+
+Status:   Connecting to 52.228.127.8:21
+
+Response: 220 DiConnect FTP Service (ServerID: 118)
+
+Command:  USER int1371991
+
+Response: 331 Password required for int1371991
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extensions supported:
+Response: SIZE
+Response: SSL
+Response: TLS
+Response: UTF8
+
+Response: 211 END 
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 UTF8 mode is always enable.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("\In\850\", Auto)
+
+>         GetWorkingDirectory()
+
+Command:  PWD
+
+Response: 257 "/" is current directory. 
+
+Command:  TYPE I
+
+Response: 200 Type I Accepted.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /In/850", 0)
+
+Command:  EPSV
+
+Response: 500 Unknown Command.
+
+>         OpenPassiveDataStream(PASV, "LIST /In/850", 0)
+
+Command:  PASV
+
+Response: 227 Entering Passive Mode(52,228,127,8,29,50).
+
+Status:   Connecting to 52.228.127.8:7474
+
+Command:  LIST /In/850
+
+Response: 125 Data connection already open. Transfer starting.
+
++---------------------------------------+
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Downloading multiple files from ftp successed.
+
+Read ftp information complete at:11-Jun-2024 01:36:58 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for DI Central Inbound 850dvsin at:11-Jun-2024 01:36:58 PM
+
+Connecting ftp started at: 11-Jun-2024 01:36:58 PM
+
+>         Connect()
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Connecting to 52.228.127.8:21
+
+Response: 220 DiConnect FTP Service (ServerID: 92)
+
+Command:  USER EpochDTC
+
+Response: 331 Password required for EpochDTC
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extensions supported:
+Response: SIZE
+Response: SSL
+Response: TLS
+Response: UTF8
+
+Response: 211 END 
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 UTF8 mode is always enable.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("\Incoming", Auto)
+
+>         GetWorkingDirectory()
+
+Command:  PWD
+
+Response: 257 "/" is current directory. 
+
+Command:  TYPE I
+
+Response: 200 Type I Accepted.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /Incoming", 0)
+
+Command:  EPSV
+
+Response: 500 Unknown Command.
+
+>         OpenPassiveDataStream(PASV, "LIST /Incoming", 0)
+
+Command:  PASV
+
+Response: 227 Entering Passive Mode(52,228,127,8,27,188).
+
+Status:   Connecting to 52.228.127.8:7100
+
+Command:  LIST /Incoming
+
+Response: 125 Data connection already open. Transfer starting.
+
++---------------------------------------+
+
+Listing:  06-11-24  08:02AM             2328 inte7677_850_47058_20240611_030235_7242603356.any
+
+Listing:  06-11-24  08:00AM             2710 inte7677_850_47335_20240611_030054_1225982719.any
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Confirmed format Windows
+
+Found the files to download.
+
+>         GetFileSize("/Incoming/inte7677_850_47058_20240611_030235_7242603356.any")
+
+Command:  SIZE /Incoming/inte7677_850_47058_20240611_030235_7242603356.any
+
+Response: 213 2328
+
+>         GetModifiedTime("/Incoming/inte7677_850_47058_20240611_030235_7242603356.any")
+
+Command:  MDTM /Incoming/inte7677_850_47058_20240611_030235_7242603356.any
+
+Response: 500 Unknown Command.
+
+>         Connect()
+
+Command:  QUIT
+
+Response: 221 DiConnect FTP Service Goodbye
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Connecting to 52.228.127.8:21
+
+Response: 220 DiConnect FTP Service (ServerID: 90)
+
+Command:  USER EpochDTC
+
+Response: 331 Password required for EpochDTC
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extensions supported:
+Response: SIZE
+Response: SSL
+Response: TLS
+Response: UTF8
+
+Response: 211 END 
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 UTF8 mode is always enable.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+Ftp connected at: 11-Jun-2024 01:37:05 PM
+
+>         DownloadFile("E:\DotNetProject\FTP\In\inte7677_850_47058_20240611_030235_7242603356Temp.any", "/Incoming/inte7677_850_47058_20240611_030235_7242603356.any", Overwrite, None)
+
+>         OpenRead("/Incoming/inte7677_850_47058_20240611_030235_7242603356.any", Binary, 0)
+
+Command:  TYPE I
+
+Response: 200 Type I Accepted.
+
+>         OpenPassiveDataStream(AutoPassive, "RETR /Incoming/inte7677_850_47058_20240611_030235_7242603356.any", 0)
+
+Command:  EPSV
+
+Response: 500 Unknown Command.
+
+>         OpenPassiveDataStream(PASV, "RETR /Incoming/inte7677_850_47058_20240611_030235_7242603356.any", 0)
+
+Command:  PASV
+
+Response: 227 Entering Passive Mode(52,228,127,8,35,140).
+
+Status:   Connecting to 52.228.127.8:9100
+
+Command:  RETR /Incoming/inte7677_850_47058_20240611_030235_7242603356.any
+
+Response: 125 Data connection already open. Transfer starting.
+
+Status:   Disposing FtpSocketStream...
+
+Response: 226 Transfer complete
+
+File /Incoming/inte7677_850_47058_20240611_030235_7242603356.any downloaded at: 11-Jun-2024 01:37:06 PM
+
+Starting merging file at : 11-Jun-2024 01:37:06 PM
+
+Merge file completed at: 11-Jun-2024 01:37:08 PM
+
+Backing up file started at : 11-Jun-2024 01:37:08 PM
+
+Backing up file completed at: 11-Jun-2024 01:37:08 PM
+
+Deleting files from ftp after download started at: 11-Jun-2024 01:37:08 PM
+
+>         DeleteFile("/Incoming/inte7677_850_47058_20240611_030235_7242603356.any")
+
+Command:  DELE /Incoming/inte7677_850_47058_20240611_030235_7242603356.any
+
+Download failed. Error: System.IO.IOException: Unable to read data from the transport connection: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at FluentFTP.FtpSocketStream.ReadLine(Encoding encoding)
+   at FluentFTP.FtpClient.GetReply()
+   at FluentFTP.FtpClient.Execute(String command)
+   at FluentFTP.FtpClient.DeleteFile(String path)
+   at FTPHandlerService.FtpRequestProcessor.DownloadFilesAndSaveToDirectory(String FtpHost, String FtpUser, String FtpPassword, String FtpDirectory, String FileExtension, String DownloadTo, Boolean DeleteFilesAfterDownload, Boolean keepBackUp, String backUpLocation, String filePrefix, String fileSuffix, Boolean timestampBackupFile, String mergeToFile, String renameFileInDestination, Boolean timeStampDestinationFile) in E:\DotNetProject\FTPHandlerService\FtpRequestProcessor.cs:line 318
+
+Ftp information is invalid for DI Central Inbound 850dvsin .Failed upload of single file.
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+Read ftp information complete at:11-Jun-2024 01:37:30 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for DI Central - Sxe60 856out at:11-Jun-2024 01:37:30 PM
+
+Connecting ftp started at: 11-Jun-2024 01:37:30 PM
+
+Trying upload by fluent ftp #1 started at: 11-Jun-2024 01:37:30 PM
+
+Upload started at: 11-Jun-2024 01:37:30 PM
+
+>         Connect()
+
+Status:   Connecting to 52.228.127.8:21
+
+Response: 220 DiConnect FTP Service (ServerID: 92)
+
+Command:  USER int1371991
+
+Response: 331 Password required for int1371991
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extensions supported:
+Response: SIZE
+Response: SSL
+Response: TLS
+Response: UTF8
+
+Response: 211 END 
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 UTF8 mode is always enable.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         Upload("/\Out\856\/edi856_o.dat", Overwrite, False)
+
+>         FileExists("/\Out\856\/edi856_o.dat")
+
+Command:  SIZE /Out/856/edi856_o.dat
+
+Response: 550 File not found. 
+
+>         OpenWrite("/\Out\856\/edi856_o.dat", Binary)
+
+Command:  TYPE I
+
+Response: 200 Type I Accepted.
+
+>         OpenPassiveDataStream(AutoPassive, "STOR /Out/856/edi856_o.dat", 0)
+
+Command:  EPSV
+
+Response: 500 Unknown Command.
+
+>         OpenPassiveDataStream(PASV, "STOR /Out/856/edi856_o.dat", 0)
+
+Command:  PASV
+
+Response: 227 Entering Passive Mode(52,228,127,8,27,188).
+
+Status:   Connecting to 52.228.127.8:7100
+
+Command:  STOR /Out/856/edi856_o.dat
+
+Response: 125 Data connection already open. Transfer starting.
+
+Status:   Disposing FtpSocketStream...
+
+Response: 226 Transfer complete.
+
+Upload successfully completed at: 11-Jun-2024 01:37:34 PM
+
+Upload completed at: 11-Jun-2024 01:37:34 PM
+
+Backing up file completed at: 11-Jun-2024 01:37:34 PM
+
+Upload success for DI Central - Sxe60 856out
+
+Read ftp information complete at:11-Jun-2024 01:37:36 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for Di Central - Sxe60 857out at:11-Jun-2024 01:37:36 PM
+
+Connecting ftp started at: 11-Jun-2024 01:37:36 PM
+
+Trying upload by fluent ftp #1 started at: 11-Jun-2024 01:37:36 PM
+
+Upload started at: 11-Jun-2024 01:37:36 PM
+
+>         Connect()
+
+Status:   Connecting to 52.228.127.8:21
+
+Response: 220 DiConnect FTP Service (ServerID: 90)
+
+Command:  USER int1371991
+
+Response: 331 Password required for int1371991
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extensions supported:
+Response: SIZE
+Response: SSL
+Response: TLS
+Response: UTF8
+
+Response: 211 END 
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 UTF8 mode is always enable.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         Upload("/\Out\857\/edi857_o.dat", Overwrite, False)
+
+>         FileExists("/\Out\857\/edi857_o.dat")
+
+Command:  SIZE /Out/857/edi857_o.dat
+
+Response: 550 File not found. 
+
+>         OpenWrite("/\Out\857\/edi857_o.dat", Binary)
+
+Command:  TYPE I
+
+Response: 200 Type I Accepted.
+
+>         OpenPassiveDataStream(AutoPassive, "STOR /Out/857/edi857_o.dat", 0)
+
+Command:  EPSV
+
+Response: 500 Unknown Command.
+
+>         OpenPassiveDataStream(PASV, "STOR /Out/857/edi857_o.dat", 0)
+
+Command:  PASV
+
+Response: 227 Entering Passive Mode(52,228,127,8,35,140).
+
+Status:   Connecting to 52.228.127.8:9100
+
+Command:  STOR /Out/857/edi857_o.dat
+
+Response: 125 Data connection already open. Transfer starting.
+
+Status:   Disposing FtpSocketStream...
+
+Response: 226 Transfer complete.
+
+Upload successfully completed at: 11-Jun-2024 01:37:40 PM
+
+Upload completed at: 11-Jun-2024 01:37:40 PM
+
+Backing up file completed at: 11-Jun-2024 01:37:40 PM
+
+Upload success for Di Central - Sxe60 857out
+
+Read ftp information complete at:11-Jun-2024 01:37:43 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for DI Central - Sxe60 855out at:11-Jun-2024 01:37:43 PM
+
+Connecting ftp started at: 11-Jun-2024 01:37:43 PM
+
+Trying upload by fluent ftp #1 started at: 11-Jun-2024 01:37:43 PM
+
+Upload started at: 11-Jun-2024 01:37:43 PM
+
+>         Connect()
+
+Status:   Connecting to 52.228.127.8:21
+
+Response: 220 DiConnect FTP Service (ServerID: 92)
+
+Command:  USER int1371991
+
+Response: 331 Password required for int1371991
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extensions supported:
+Response: SIZE
+Response: SSL
+Response: TLS
+Response: UTF8
+
+Response: 211 END 
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 UTF8 mode is always enable.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         Upload("/\Out\855\/edi855_o.dat", Overwrite, False)
+
+>         FileExists("/\Out\855\/edi855_o.dat")
+
+Command:  SIZE /Out/855/edi855_o.dat
+
+Response: 550 File not found. 
+
+>         OpenWrite("/\Out\855\/edi855_o.dat", Binary)
+
+Command:  TYPE I
+
+Response: 200 Type I Accepted.
+
+>         OpenPassiveDataStream(AutoPassive, "STOR /Out/855/edi855_o.dat", 0)
+
+Command:  EPSV
+
+Response: 500 Unknown Command.
+
+>         OpenPassiveDataStream(PASV, "STOR /Out/855/edi855_o.dat", 0)
+
+Command:  PASV
+
+Response: 227 Entering Passive Mode(52,228,127,8,27,188).
+
+Status:   Connecting to 52.228.127.8:7100
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Command:  QUIT
+
+Command:  STOR /Out/855/edi855_o.dat
+
+Response: 221 DiConnect FTP Service Goodbye
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+Response: 125 Data connection already open. Transfer starting.
+
+Status:   Disposing FtpSocketStream...
+
+Response: 226 Transfer complete.
+
+Upload successfully completed at: 11-Jun-2024 01:37:47 PM
+
+Upload completed at: 11-Jun-2024 01:37:47 PM
+
+Backing up file completed at: 11-Jun-2024 01:37:47 PM
+
+Upload success for DI Central - Sxe60 855out
+
+Read ftp information complete at:11-Jun-2024 01:37:49 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading multiple files to ftp for DI Central - Sxe60 846out at:11-Jun-2024 01:37:49 PM
+
+Uploading files:demo.xml
+
+Uploading files:edi810_o.dat
+
+Uploading files:edi850_o.dat
+
+Uploading files:test.txt
+
+Connecting ftp started at: 11-Jun-2024 01:37:49 PM
+
+Trying upload by fluent ftp #1 started at: 11-Jun-2024 01:37:49 PM
+
+Upload started at: 11-Jun-2024 01:37:49 PM
+
+>         Connect()
+
+Status:   Connecting to 52.228.127.8:21
+
+Response: 220 DiConnect FTP Service (ServerID: 90)
+
+Command:  USER int1371991
+
+Response: 331 Password required for int1371991
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extensions supported:
+Response: SIZE
+Response: SSL
+Response: TLS
+Response: UTF8
+
+Response: 211 END 
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 UTF8 mode is always enable.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         Upload("/\Out\846\/test.txt", Overwrite, False)
+
+>         FileExists("/\Out\846\/test.txt")
+
+Command:  SIZE /Out/846/test.txt
+
+Response: 550 File not found. 
+
+>         OpenWrite("/\Out\846\/test.txt", Binary)
+
+Command:  TYPE I
+
+Response: 200 Type I Accepted.
+
+>         OpenPassiveDataStream(AutoPassive, "STOR /Out/846/test.txt", 0)
+
+Command:  EPSV
+
+Response: 500 Unknown Command.
+
+>         OpenPassiveDataStream(PASV, "STOR /Out/846/test.txt", 0)
+
+Command:  PASV
+
+Response: 227 Entering Passive Mode(52,228,127,8,35,141).
+
+Status:   Connecting to 52.228.127.8:9101
+
+Command:  STOR /Out/846/test.txt
+
+Response: 125 Data connection already open. Transfer starting.
+
+Status:   Disposing FtpSocketStream...
+
+Response: 226 Transfer complete.
+
+Upload successfully completed at: 11-Jun-2024 01:37:53 PM
+
+Upload completed at: 11-Jun-2024 01:37:53 PM
+
+Backing up file completed at: 11-Jun-2024 01:37:53 PM
+
+Upload success for DI Central - Sxe60 846out
+
+Read ftp information complete at:11-Jun-2024 01:37:56 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for OOCL - OOCL Post Advice at:11-Jun-2024 01:37:56 PM
+
+Connecting ftp started at: 11-Jun-2024 01:37:56 PM
+
+>         Connect()
+
+Status:   Connecting to 146.222.19.55:21
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER ftp_INPLLL1
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("/ftp_INPLLL1/out", Auto)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /ftp_INPLLL1/out", 0)
+
+Command:  EPSV
+
+Response: 229 Entering Extended Passive Mode (|||55821|)
+
+Status:   Connecting to 146.222.19.55:55821
+
+Command:  LIST /ftp_INPLLL1/out
+
+Response: 150 Opening BINARY mode data connection.
+
++---------------------------------------+
+
+Listing:  04-09-15  05:30PM       <DIR>          Backup
+
+Listing:  06-07-24  08:03PM       <DIR>          tmp
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Not in UNIX format
+
+Status:   Not in UNIX format
+
+Status:   Detected format Windows
+
+File to download not found.
+
+File to download not found.
+
+Ftp information is invalid for OOCL - OOCL Post Advice .Failed upload of single file.
+
+Read ftp information complete at:11-Jun-2024 01:37:59 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  downloading single file from ftp for OOCL - OOCL INTPlay.csv at:11-Jun-2024 01:37:59 PM
+
+Connecting ftp started at: 11-Jun-2024 01:37:59 PM
+
+>         Connect()
+
+Status:   Connecting to 146.222.19.55:21
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER ftp_INPLLL1
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("/ftp_INPLLL1/out", Auto)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /ftp_INPLLL1/out", 0)
+
+Command:  EPSV
+
+Response: 229 Entering Extended Passive Mode (|||55822|)
+
+Status:   Connecting to 146.222.19.55:55822
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Command:  QUIT
+
+Command:  LIST /ftp_INPLLL1/out
+
+Response: 221 Goodbye.
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+Response: 150 Opening BINARY mode data connection.
+
++---------------------------------------+
+
+Listing:  04-09-15  05:30PM       <DIR>          Backup
+
+Listing:  06-07-24  08:03PM       <DIR>          tmp
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Not in UNIX format
+
+Status:   Not in UNIX format
+
+Status:   Detected format Windows
+
+Download of single file from ftp successed for OOCL - OOCL INTPlay.csv at:11-Jun-2024 01:38:02 PM
+
+Read ftp information complete at:11-Jun-2024 01:38:02 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for OOCL - Sxe60 850out OOCL at:11-Jun-2024 01:38:02 PM
+
+Connecting ftp started at: 11-Jun-2024 01:38:02 PM
+
+Trying upload by fluent ftp #1 started at: 11-Jun-2024 01:38:02 PM
+
+Upload started at: 11-Jun-2024 01:38:02 PM
+
+>         Connect()
+
+Status:   Connecting to 146.222.19.55:21
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER ftp_INPLLL1
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         Upload("//ftp_INPLLL1/in/edi850_o.dat", Overwrite, False)
+
+>         FileExists("//ftp_INPLLL1/in/edi850_o.dat")
+
+Command:  SIZE /ftp_INPLLL1/in/edi850_o.dat
+
+Response: 550 The system cannot find the file specified. 
+
+>         OpenWrite("//ftp_INPLLL1/in/edi850_o.dat", Binary)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "STOR /ftp_INPLLL1/in/edi850_o.dat", 0)
+
+Command:  EPSV
+
+Response: 229 Entering Extended Passive Mode (|||55884|)
+
+Status:   Connecting to 146.222.19.55:55884
+
+Command:  STOR /ftp_INPLLL1/in/edi850_o.dat
+
+Response: 125 Data connection already open; Transfer starting.
+
+Status:   Disposing FtpSocketStream...
+
+Response: 226 Transfer complete.
+
+Upload successfully completed at: 11-Jun-2024 01:38:04 PM
+
+Upload completed at: 11-Jun-2024 01:38:04 PM
+
+Backing up file completed at: 11-Jun-2024 01:38:04 PM
+
+Upload success for OOCL - Sxe60 850out OOCL
+
+Read ftp information complete at:11-Jun-2024 01:38:06 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading multiple files to ftp for 3PL - ShippingOrdersOW_out at:11-Jun-2024 01:38:06 PM
+
+Uploading files:demo.xml
+
+Connecting ftp started at: 11-Jun-2024 01:38:06 PM
+
+Trying upload by fluent ftp #1 started at: 11-Jun-2024 01:38:06 PM
+
+Upload started at: 11-Jun-2024 01:38:06 PM
+
+>         Connect()
+
+Status:   Connecting to 107.0.168.16:21
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER 282
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         Upload("/\282\OW\/demo.xml", Overwrite, False)
+
+>         FileExists("/\282\OW\/demo.xml")
+
+Command:  SIZE /282/OW/demo.xml
+
+Response: 550 The system cannot find the file specified. 
+
+>         OpenWrite("/\282\OW\/demo.xml", Binary)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "STOR /282/OW/demo.xml", 0)
+
+Command:  EPSV
+
+Response: 229 Entering Extended Passive Mode (|||56702|)
+
+Status:   Connecting to 107.0.168.16:56702
+
+Command:  STOR /282/OW/demo.xml
+
+Response: 125 Data connection already open; Transfer starting.
+
+Status:   Disposing FtpSocketStream...
+
+Response: 226 Transfer complete.
+
+Upload successfully completed at: 11-Jun-2024 01:38:11 PM
+
+Upload completed at: 11-Jun-2024 01:38:11 PM
+
+Backing up file completed at: 11-Jun-2024 01:38:11 PM
+
+Uploading files:edi810_o.dat
+
+Upload success for 3PL - ShippingOrdersOW_out
+
+Read ftp information complete at:11-Jun-2024 01:38:13 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for 3PL - ShippingOrdersSW_in at:11-Jun-2024 01:38:13 PM
+
+Connecting ftp started at: 11-Jun-2024 01:38:13 PM
+
+>         Connect()
+
+Status:   Connecting to 107.0.168.16:21
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER 282
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("/282/SW/", Auto)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /282/SW", 0)
+
+Command:  EPSV
+
+Response: 229 Entering Extended Passive Mode (|||56704|)
+
+Status:   Connecting to 107.0.168.16:56704
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+Command:  LIST /282/SW
+
+Response: 150 Opening BINARY mode data connection.
+
++---------------------------------------+
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Downloading multiple files from ftp successed.
+
+Read ftp information complete at:11-Jun-2024 01:38:18 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading multiple files to ftp for Regal - ShippingOrdersREGA_out at:11-Jun-2024 01:38:18 PM
+
+Uploading files:edi810_o.dat
+
+Upload success for Regal - ShippingOrdersREGA_out
+
+Read ftp information complete at:11-Jun-2024 01:38:21 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Downloading single file from ftp for Regal - ShippingOdersREGA_in at:11-Jun-2024 01:38:21 PM
+
+Connecting ftp started at: 11-Jun-2024 01:38:21 PM
+
+>         Connect()
+
+Status:   Connecting to 107.0.168.16:21
+
+Response: 220 Microsoft FTP Service
+
+Status:   Detected FTP server: WindowsServerIIS
+
+Command:  USER 282
+
+Response: 331 Password required
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extended features supported:
+Response: LANG EN*
+Response: UTF8
+Response: AUTH TLS;TLS-C;SSL;TLS-P;
+Response: PBSZ
+Response: PROT C;P;
+Response: CCC
+Response: HOST
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+
+Response: 211 END
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 OPTS UTF8 command successful - UTF8 encoding now ON.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         GetListing("/282/SW/", Auto)
+
+Command:  TYPE I
+
+Response: 200 Type set to I.
+
+>         OpenPassiveDataStream(AutoPassive, "LIST /282/SW", 0)
+
+Command:  EPSV
+
+Response: 229 Entering Extended Passive Mode (|||56706|)
+
+Status:   Connecting to 107.0.168.16:56706
+
+Command:  LIST /282/SW
+
+Response: 150 Opening BINARY mode data connection.
+
++---------------------------------------+
+
+-----------------------------------------
+
+Status:   Disposing FtpSocketStream...
+
+>         CloseDataStream()
+
+Response: 226 Transfer complete.
+
+Status:   Disposing FtpSocketStream...
+
+Downloading multiple files from ftp successed.
+
+Read ftp information complete at:11-Jun-2024 01:38:26 PM
+
+----------------------------------------------------------------------------------------------------------------------
+Started  Uploading single file to ftp for DI Central - Sxe60 810out at:11-Jun-2024 01:38:26 PM
+
+Connecting ftp started at: 11-Jun-2024 01:38:26 PM
+
+Trying upload by fluent ftp #1 started at: 11-Jun-2024 01:38:26 PM
+
+Upload started at: 11-Jun-2024 01:38:26 PM
+
+>         Connect()
+
+Status:   Connecting to 52.228.127.8:21
+
+Response: 220 DiConnect FTP Service (ServerID: 118)
+
+Command:  USER int1371991
+
+Response: 331 Password required for int1371991
+
+Command:  PASS ***
+
+Response: 230 User logged in.
+
+Command:  FEAT
+
+Response: 211-Extensions supported:
+Response: SIZE
+Response: SSL
+Response: TLS
+Response: UTF8
+
+Response: 211 END 
+
+Status:   Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+
+Command:  OPTS UTF8 ON
+
+Response: 200 UTF8 mode is always enable.
+
+Command:  SYST
+
+Response: 215 Windows_NT
+
+>         Upload("/\Out\810\/edi810_o.dat", Overwrite, False)
+
+>         FileExists("/\Out\810\/edi810_o.dat")
+
+Command:  SIZE /Out/810/edi810_o.dat
+
+Response: 550 File not found. 
+
+>         OpenWrite("/\Out\810\/edi810_o.dat", Binary)
+
+Command:  TYPE I
+
+Response: 200 Type I Accepted.
+
+>         OpenPassiveDataStream(AutoPassive, "STOR /Out/810/edi810_o.dat", 0)
+
+Command:  EPSV
+
+Response: 500 Unknown Command.
+
+>         OpenPassiveDataStream(PASV, "STOR /Out/810/edi810_o.dat", 0)
+
+Command:  PASV
+
+Response: 227 Entering Passive Mode(52,228,127,8,29,50).
+
+Status:   Connecting to 52.228.127.8:7474
+
+Command:  STOR /Out/810/edi810_o.dat
+
+Response: 125 Data connection already open. Transfer starting.
+
+Status:   Disposing FtpSocketStream...
+
+Response: 226 Transfer complete.
+
+Upload successfully completed at: 11-Jun-2024 01:38:30 PM
+
+Upload completed at: 11-Jun-2024 01:38:30 PM
+
+Backing up file completed at: 11-Jun-2024 01:38:30 PM
+
+Upload success for DI Central - Sxe60 810out
+
+Job Ends at: 11-Jun-2024 01:38:32 PM
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Testing connectivity using Socket.Poll()...
+
+Command:  QUIT
+
+Response: 221 Goodbye.
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+
+>         Dispose()
+
+Status:   Disposing FtpClient object...
+
+Status:   Disposing FtpSocketStream...
+
+Status:   Disposing FtpSocketStream...
+

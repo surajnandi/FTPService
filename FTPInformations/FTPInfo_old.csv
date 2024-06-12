@@ -1,0 +1,6 @@
+JobId,Client,FtpHost,FtpUserId,FtpPassword,JobType,BackupLocation,DoBackup,LocalFileDirectory,FtpDirectory,FileName,FileExtension,DeleteFileWhenDone,FilePrefix,FileSuffix,TimestampBackupFile,MergeToFile,RenameFileInDestinationTo,TimestampDestinationFile,SendErrorEmailTo
+1,Traffic Tech,ftp://127.0.0.1,Suraj,YndeecHWTE17+ut/e8xaGU++6qybOZ4vLF7LcYnBTBk=,0,E:\DotNetProject\FTP\Backup,Yes,E:\DotNetProject\FTP\In,,edi856_o.dat,*1282-CHS,Yes,,,No,,REGA_in_,Yes,suraj@nightstarpartners.com
+2,Traffic Tech,ftp://127.0.0.1,Suraj,YndeecHWTE17+ut/e8xaGU++6qybOZ4vLF7LcYnBTBk=,0,E:\DotNetProject\FTP\Backup,Yes,E:\DotNetProject\FTP\Out,,,*.dat,Yes,,,Yes,,,No,
+3,Traffic Tech,ftp://127.0.0.1,Suraj,YndeecHWTE17+ut/e8xaGU++6qybOZ4vLF7LcYnBTBk=,0,E:\DotNetProject\FTP\Backup,Yes,E:\DotNetProject\FTP\Out,,edi856_o.dat,*282-SEA,Yes,,,Yes,,REGAE_in_.xml,Yes,
+4,Traffic Tech,ftp://127.0.0.1,Suraj,YndeecHWTE17+ut/e8xaGU++6qybOZ4vLF7LcYnBTBk=,0,E:\DotNetProject\FTP\Backup,Yes,E:\DotNetProject\FTP\Out,,,*dat,Yes,,,Yes,,REGAE_in_.xml,Yes,
+8,Traffic Tech,192.168.29.101,suraj,YndeecHWTE17+ut/e8xaGU++6qybOZ4vLF7LcYnBTBk=,1,E:\DotNetProject\FTP\Backup,Yes,E:\DotNetProject\FTP\Out,,test123.dat,,Yes,Pref_,_Suff,Yes,,,Yes,
